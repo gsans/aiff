@@ -1,0 +1,9 @@
+input:not(.ng-invalid), input.ng-valid {
+  border: 2px solid #42A948; /* green */
+}
+input.ng-invalid {
+  border: 2px solid #a94442; /* red */
+}
+.alert {
+  color: #a94442; /* red */
+}
