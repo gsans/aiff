@@ -1,0 +1,15 @@
+<li>
+  <div class='row'>
+    <div class='col-md-12'>
+      <div class='text-body'>{{tweet.text}}</div>
+      <div class='profile-container'>
+        <div class='profile-small'>
+          <img [src]="tweet.postedBy?tweet.postedBy.profile_image_url : DEFAULT_PIC" />
+        </div>
+        <div class='profile-small-text'>by {{tweet?.postedBy?.screen_name}}
+          <span class='hidden-xs'>, {{formatDate(tweet.created)}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</li>

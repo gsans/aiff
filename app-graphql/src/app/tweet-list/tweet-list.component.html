@@ -1,0 +1,8 @@
+<div class='list'>
+  <ul>
+    <app-tweet *ngFor="let tweet of tweets" [tweet]="tweet"></app-tweet>
+  </ul>
+  <div *ngIf="empty" class='centered text-body'>There are no tweets.</div>
+  <app-loading *ngIf="!tweets"></app-loading>
+  <section id='bottom'></section>
+</div>
